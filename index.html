@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nescafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Montez&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ffffff",
+              secondary: "#222022",
+              light: "#d62118",
+            },
+            backgroundImage: {
+              banner: "url('/images/coffee banner.jpg')",
+              formbg: "url('/images/form.jpg')",
+            },
+            fontFamily: {
+              open: ["Open Sans", "sans-serif"],
+              two: ["Montez", "cursive"],
+              three: ["EB Garamond", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="bg-transparent fixed top-0 left-0 w-full">
+      <div
+        class="container max-w-7xl mx-auto 2xl:px-0 md:px-20 px-10 flex justify-between items-center py-2"
+      >
+        <a href="#"
+          ><img
+            class="h-16 w-auto md:h-20"
+            src="images/nesle logo.png"
+            alt="logo"
+        /></a>
+        <nav>
+          <a href="#home" class="pr-5 text-primary text-xl">Home</a>
+          <a href="#about" class="pr-5 text-primary text-xl">About</a>
+          <a href="#products" class="pr-5 text-primary text-xl">Products</a>
+          <a href="#contact" class="text-primary text-xl">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <section class="bg-banner bg-center bg-no-repeat bg-cover">
+      <div
+        class="container max-w-7xl mx-auto 2xl:px-0 md:px-20 px-10 py-60 flex justify-between"
+      >
+        <div class="w-2/5"></div>
+        <div class="text-left w-3/5">
+          <h1 class="text-6xl font-open font-bold text-primary">
+            Recharge your day with <br />
+            NESCAFÉ®
+          </h1>
+          <p class="text-3xl font-three pt-2.5 text-primary">
+            There are times when we need that little extra push, and the bold
+            taste of our finely roasted coffee beans gives you precisely that.
+            Then the day is yours to seize.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <main>
+      <section class="bg-secondary">
+        <div class="container max-w-7xl mx-auto 2xl:px-0 md:px-20 px-10 py-10">
+          <h2 class="text-center text-primary text-4xl font-bold pb-10">
+            About us
+          </h2>
+          <div class="grid grid-cols-2 gap-10 items-center">
+            <div class=" ">
+              <h3 class="text-primary text-3xl pb-5">NESCAFÉ® Classic</h3>
+              <p class="text-primary text-lg pb-3">
+                The unmistakable full-flavour of NESCAFÉ® Classic is what makes
+                our signature coffee so loved all over the world. Savour the
+                wonderfully rich and refreshing aroma of this medium-dark roast.
+              </p>
+              <button class="text-secondary bg-primary p-3 rounded-lg text-2xl">
+                Explore NESCAFE classic
+              </button>
+            </div>
+
+            <div>
+              <img
+                class="rounded-lg h-auto w-auto border-solid border-slate-100 border-2"
+                src="images/nescafe about-2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- products -->
+      <section class="bg-secondary">
+        <div class="container max-w-7xl mx-auto 2xl:px-0 md:px-20 px-10 py-10">
+          <h2 class="text-center text-primary text-4xl font-bold pb-10">
+            Our Products
+          </h2>
+
+          <div class="grid grid-cols-3 gap-6">
+            <div
+              class="bg-light p-6 rounded-xl border-solid border-slate-100 border-2 flex flex-col items-center"
+            >
+              <img
+                class="pb-5"
+                src="images/iloveimg-converted/gold blend.jpg"
+                alt="nescafe classic"
+              />
+              <h5 class="text-primary text-4xl pb-3 text-center">
+                NESCAFÉ® Gold Blend Coffee
+              </h5>
+              <p class="text-primary text-center">
+                With NESCAFÉ® GOLD, we bring you our finest coffee, artfully
+                crafted by our expert blenders and roasters. An exquisite cup
+                for bringing moments to life.
+              </p>
+            </div>
+
+            <div
+              class="bg-light p-6 rounded-xl border-solid border-slate-100 border-2 flex flex-col items-center"
+            >
+              <img
+                class="pb-5"
+                src="images/iloveimg-converted/black roast.jpg"
+                alt="nescafe classic"
+              />
+              <h5 class="text-primary text-4xl pb-3 text-center">
+                NESCAFÉ® Classic Black Roast
+              </h5>
+              <p class="text-primary text-center">
+                NESCAFÉ® Classic Black Roast is bursting with Rich Intense
+                coffee flavour for the strongest start to your morning without
+                having to add an extra spoonful. The beans are roasted for
+                longer, to deliver a rich intense tasting coffee.
+              </p>
+            </div>
+
+            <div
+              class="bg-light p-6 rounded-xl border-solid border-slate-100 border-2 flex flex-col items-center"
+            >
+              <img
+                class="pb-5"
+                src="images/iloveimg-converted/choco mocha.jpg"
+                alt="nescafe classic"
+              />
+              <h5 class="text-primary text-4xl pb-3 text-center">
+                NESCAFÉ® Gold Choco Mocha
+              </h5>
+              <p class="text-primary text-center">
+                Savour each sip with a wickedly delicious NESCAFÉ® Gold Choco
+                Mocha blended with a rich taste of chocolate, coffee & skimmed
+                milk powder.
+              </p>
+            </div>
+
+            <div
+              class="bg-light p-6 rounded-xl border-solid border-slate-100 border-2 flex flex-col items-center"
+            >
+              <img
+                class="pb-5"
+                src="images/iloveimg-converted/gold capuccino.jpg"
+                alt="nescafe classic"
+              />
+              <h5 class="text-primary text-4xl pb-3 text-center">
+                NESCAFÉ® Gold Cappuccino
+              </h5>
+              <p class="text-primary text-center">
+                Indulge in a café style frothy cappuccino complemented with
+                generous serving of silky milk foam to create a decadent coffee
+                experience. A carefully selected blend of milk and authentic
+                NESCAFÉ® coffee is what makes our NESCAFÉ® Gold Cappuccino so
+                irresistible.
+              </p>
+            </div>
+
+            <div
+              class="bg-light p-6 rounded-xl border-solid border-slate-100 border-2 flex flex-col items-center"
+            >
+              <img
+                class="pb-5"
+                src="images/iloveimg-converted/iced latte.jpg"
+                alt="nescafe classic"
+              />
+              <h5 class="text-primary text-4xl pb-3 text-center">
+                NESCAFÉ® Iced Latté Can
+              </h5>
+              <p class="text-primary text-center">
+                Your favorite coffee experience made more stylish with a cool
+                can!
+              </p>
+            </div>
+
+            <div
+              class="bg-light p-6 rounded-xl border-solid border-slate-100 border-2 flex flex-col items-center"
+            >
+              <img
+                class="pb-5"
+                src="images/iloveimg-converted/sunrise.jpg"
+                alt="nescafe classic"
+              />
+              <h5 class="text-primary text-4xl pb-3 text-center">
+                NESCAFÉ® Sunrise Coffee
+              </h5>
+              <p class="text-primary text-center">
+                Enjoy the rich aroma and great taste every. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Consequatur mollitia
+                iusto laboriosam dolorem maxime fugiat accusantium amet quaerat
+                reiciendis eveniet, tenetur eaque dolores facere sint
+                blanditiis, neque aliquid vel nostrum!
+              </p>
+            </div>
+
+            <div
+              class="bg-light p-6 rounded-xl border-solid border-slate-100 border-2 flex flex-col items-center"
+            >
+              <img
+                class="pb-5"
+                src="images/iloveimg-converted/intense.jpg"
+                alt="nescafe classic"
+              />
+              <h5 class="text-primary text-4xl pb-3 text-center">
+                NESCAFÉ® Intense Can
+              </h5>
+              <p class="text-primary text-center">
+                Your favorite coffee experience made more stylish with a cool
+                can!
+              </p>
+            </div>
+
+            <div
+              class="bg-light p-6 rounded-xl border-solid border-slate-100 border-2 flex flex-col items-center"
+            >
+              <img
+                class="pb-5"
+                src="images/iloveimg-converted/gold blend decaf.jpg"
+                alt="nescafe classic"
+              />
+              <h5 class="text-primary text-4xl pb-3 text-center">
+                NESCAFÉ® Gold Blend Coffee
+              </h5>
+              <p class="text-primary text-center">
+                With NESCAFÉ® GOLD, we bring you our finest coffee, artfully
+                crafted by our expert blenders and roasters. An exquisite cup
+                for bringing moments to life.
+              </p>
+            </div>
+
+            <div
+              class="bg-light p-6 rounded-xl border-solid border-slate-100 border-2 flex flex-col items-center"
+            >
+              <img
+                class="pb-5"
+                src="images/iloveimg-converted/all in one.jpg"
+                alt="nescafe classic"
+              />
+              <h5 class="text-primary text-4xl pb-3 text-center">
+                NESCAFÉ® ALL IN 1 Coffee
+              </h5>
+              <p class="text-primary text-center">
+                Nescafé® ALL IN 1 is a carefully crafted combination of coffee,
+                milk sugar packed in an easy to use sachet. Just add hot water
+                to make a delicious smooth cup of coffee anytime … everytime
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-secondary">
+        <div class="container max-w-7xl mx-auto 2xl:px-0 md:px-20 px-10 py-10">
+          <div>
+            <h2 class="text-primary text-3xl pb-2">Coffee Culture</h2>
+            <p class="text-primary p-6">
+              Whether over a stimulating morning coffee, a late afternoon latte
+              or an after-dinner cappuccino, we love real connections that lead
+              to new starts, new ideas or simply great chats. Come, have a
+              coffee with us!
+            </p>
+          </div>
+          <div class="grid grid-cols-3 gap-5">
+            <img
+              class="rounded-xl border-solid border-slate-100 border-2"
+              src="images/product-1.jpg.png"
+              alt=""
+            />
+            <img
+              class="rounded-xl border-solid border-slate-100 border-2"
+              src="images/nescafe product-2.jpg"
+              alt=""
+            />
+            <img
+              class="rounded-xl border-solid border-slate-100 border-2"
+              src="images/nescafe product-3.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- form -->
+      <section class="bg-formbg bg-center bg-no-repeat bg-cover">
+        <div class="container max-w-7xl mx-auto 2xl:px-0 md:px-20 px-10 py-10">
+          <h2 class="text-center text-primary text-4xl font-bold pb-10">
+            To Stay Informed
+          </h2>
+          <div class="flex justify-between items-center">
+            <div class="2/5"></div>
+            <div class="3/5 flex flex-col gap-5">
+              <input
+                class="p-6 w-96 rounded-lg"
+                type="text"
+                placeholder=" Enter your FirstName"
+              />
+              <input
+                class="p-6 w-96 rounded-lg"
+                type="email"
+                placeholder="email@address.com"
+              />
+              <input
+                class="p-6 w-96 rounded-lg"
+                type="date"
+                placeholder="date of birth"
+              />
+              <div>
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox" class="text-primary"
+                  >I agree to terms and services of the website.</label
+                >
+              </div>
+              <div>
+                <input type="checkbox" id="terms" />
+                <label for="terms" class="text-primary"
+                  >I agree to receive marketing communications from Nescafé
+                </label>
+                <div class="pt-4">
+                  <button
+                    class="text-secondary bg-primary p-2 w-40 rounded-lg text-2xl"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <section class="bg-secondary">
+        <div class="container max-w-7xl mx-auto 2xl:px-0 md:px-20 px-10 py-10">
+          <h2 class="text-center text-primary text-3xl pb-5">Stay Connected</h2>
+
+          <div>
+            <p class="text-center text-primary pb-5">
+              Follow us on our social media accounts to get even more tasty
+              content.
+            </p>
+          </div>
+          <div class="flex gap-6 items-center justify-center pt-5">
+            <a class="w-7" href="https://www.facebook.com/"
+              ><img src="images/facebook.png" alt="facebook"
+            /></a>
+            <a class="w-7" href="https://twitter.com/?lang=en"
+              ><img src="images/twitter.png" alt="twitter"
+            /></a>
+            <a class="w-7" href="https://www.instagram.com/"
+              ><img src="images/instagram.png" alt=""
+            /></a>
+            <a class="w-7" href="https://www.youtube.com/"
+              ><img src="images/youtube.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function toggleNav() {
+        const nav = document.querySelector("nav");
+        nav.classList.toggle("active");
+      }
+
+      window.onscroll = function () {
+        const header = document.querySelector("header");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          header.style.backgroundColor = "#222022";
+        } else {
+          header.style.backgroundColor = "transparent";
+        }
+      };
+    </script>
+  </body>
+</html>
